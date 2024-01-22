@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="output.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  @media (max-width:1050px){
+#click:checked ~ .nav{
+  left: 0% ;
+}
+#click:checked ~ .menu-btn i:before{
+  content: "\f00d";
+}
+.nav{
+  left: -150% ;
+  transition: all 0.9s ease;
+}
+  }
+</style>
+<body>
+    <section class="pt-10  hidden md:block bg-[#181720]  ">
+    <div class="bg-[#3E3D4B] container  max-w-[90%] md:max-w-6xl rounded-full h-[65px] my-0 mx-auto " id="main_menu">
+        <div class="items-center justify-between hidden md:flex h-full mx-3" >
+            <li class="float-left list-none ">
+              <a href="#" class="text-white hover:bg-[#583EBC] hover:rounded-[25px] px-6 py-3" >Home</a></li>
+            <li class="float-left  hidden md:block">
+              <a href="#" class="text-white hover:bg-[#583EBC] hover:rounded-[25px] px-6 py-3  ">About</a>
+            </li >
+            <li class="float-left  hidden md:block">
+              <a href="#" class="text-white hover:bg-[#583EBC] hover:rounded-[25px] px-6 py-3 ">Service</a>
+            </li>
+          <div>
+            <img src="/images/Frame 55.svg" alt="">
+          </div>
+         
+            <li class="float-none  hidden md:block">
+              <a href="#" class="text-white hover:bg-[#583EBC] hover:rounded-[25px] px-6 py-3 ">Portfolio</a>
+            </li>
+            <li class="float-none  hidden md:block">
+              <a href="#" class="text-white hover:bg-[#583EBC] hover:rounded-[25px] px-7 py-3 ">Blog</a>
+            </li>
+            <li class="float-none  hidden md:block">
+              <a href="#" class="text-white hover:bg-[#583EBC] hover:rounded-[25px] px-6 py-3 ">Contact</a>
+            </li>
+      </div>
+      
+    </div>
+    </section>
+    <section class="bg-[#181720] pt-10 ">
+    <nav class="bg-[#3E3D4B] px-3 pt-2 relative  w-[90%] rounded-full block md:hidden h-[65px] my-0 mx-auto">
+      <div>
+        <div class="flex items-center  justify-between">
+          <img class="z-20" src="/images/Frame 55.svg " alt="">
+          <input type="checkbox" class="hidden" id="click">
+          <label for="click" class="menu-btn z-20 pt-1"><i class="fas fa-bars text-4xl	pe-3 text-white"></i></label>
+        
+        
+        <div class="fixed text-center z-10 pt-44 top-0  nav  bg-[#181720]   h-screen w-full  ">
+          <li class=" ">
+            <a href="#" class="text-white hover:font-bold  text-4xl" >Home</a></li>
+          <li class=" py-5 ">
+            <a href="#" class="text-white  hover:font-bold  text-4xl  ">About</a>
+          </li >
+          <li class="  ">
+            <a href="#" class="text-white  hover:font-bold  text-4xl ">Service</a>
+          </li>
+          <li class=" py-5 ">
+            <a href="#" class="text-white  hover:font-bold  text-4xl ">Portfolio</a>
+          </li>
+          <li class="  ">
+            <a href="#" class="text-white  hover:font-bold  text-4xl ">Blog</a>
+          </li>
+          <li class="  py-5 ">
+            <a href="#" class="text-white  hover:font-bold  text-4xl ">Contact</a>
+          </li>
+          <div class="pt-40">
+            <a class="text-white text-lg border-b pb-5 border-[#747479]" href="">hello@artboardstudio.com</a>
+            <div class=" pt-10">
+              <a class="text-white text-lg" href="">Facebook . </a>
+              <a class="text-white text-lg" href="">LinkedIn . </a>
+              <a class="text-white text-lg" href="">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+ 
+    </nav>
+  </section>
+
+<!-- first section -->
+
+    <section class="md:py-20 pb-20 pt-10 bg-[#181720]">
+      <div class="max-w-[90%] md:max-w-6xl mx-auto md:flex justify-between items-center">
+        <div>
+          <div class="flex justify-end"><img src="/images/Vector 1.svg" alt=""></div>
+          <h1 class="text-4xl md:text-5xl font-myFont	 text-white  ">I’m Jon Dawson, <br>Product Designer</h1>
+          <p class="pt-5 text-white pb-10 md:leading-6   md:text-normal" >Lore ipsum dolor sit amet, consectetur adipiscing elit, sed do <br class="hidden md:block"> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <br class="hidden md:block">enim ad minim veniam, quis nostrud.</p>
+          <button class="py-2 px-12 rounded-lg  font-bold  bg-white text-dark">About</button>
+          <button class="py-2 px-6 ml-3 rounded-lg bg-[#583EBC] text-white">Download CV</button>
+        </div>
+        <div class="flex items-center">
+          <div class="relative flex w-full pt-10 md:pt-0 md:justify-end">
+          <img class="w-full md:w-4/5" src="/images/Frame 60hero.svg" alt="">
+          <img class="absolute bottom-0 w-[6rem] md:w-[6.6rem] right-0" src="/images/Frame 427321973.svg" alt="">
+        </div>
+          <div class=" hidden md:flex md:w-[150px]   flex-col items-center mt-20">
+            <p class="text-white pe-[7rem] pb-1 md:w-56 rotate-90">Follow me on:</p>
+            <img class="pb-5" src="/images/Line 21.svg" alt="">
+            <img src="/images/facebook-4 1.svg" alt="">
+            <img class="py-5" src="/images/instagram-5 1.svg" alt="">
+            <img src="/images/linkedin-icon-2 1.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- second section -->
+
+    <section class="bg-[#23222A] py-20">
+      <div class=" mx-auto max-w-[90%] md:max-w-6xl">
+        <div class=" text-center"> 
+          <h2 class=" text-white text-2xl font-medium ">MY EXPERTISE</h2>
+         
+            <h1 class=" text-white text-5xl md:text-6xl font-myFont py-3">Innovative
+              Solutions</h1>
+              <p class="text-white leading-8 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br class="hidden md:block"> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+        </div>
+        <div class=" swiper mySwiper ">
+          <div class=" swiper-wrapper md:py-5 mb-7 ">
+            <div class=" swiper-slide bg-cover relative"> 
+              <img class=" absolute bottom-0" src="/images/Frame 600.svg" alt="">
+              <img class=" absolute bottom-0 w-[6rem] lg:w-[6.3rem] md:w-[5.5rem]  right-0" src="/images/Frame 57.svg" alt="">
+
+            </div>
+            <div class="swiper-slide bg-cover	 ">
+              <img class=" absolute bottom-0" src="/images/Frame 6000 (1).svg" alt="">
+              <img class="absolute bottom-0 w-[6rem] lg:w-[6.3rem] md:w-[5.5rem] right-0" src="/images/Frame 57.svg" alt="">
+
+            </div>
+            <div class="swiper-slide bg-cover	 ">
+              <img class=" absolute bottom-0" src="/images/Frame 600000 (2).svg" alt="">
+              <img class="absolute bottom-0 w-[6rem] lg:w-[6.3rem] md:w-[5.5rem] right-0" src="/images/Frame 57.svg" alt="">
+
+            </div>
+            <div class="swiper-slide bg-cover	 ">
+              <img class=" absolute bottom-0" src="/images/Frame 600.svg" alt="">
+              <img class="absolute bottom-0 w-[6rem] lg:w-[6.3rem] md:w-[5.5rem] right-0" src="/images/Frame 57.svg" alt="">
+
+            </div>
+            <div class="swiper-slide bg-cover	 ">
+              <img class=" absolute bottom-0" src="/images/Frame 6000 (1).svg" alt="">
+              <img class="absolute bottom-0 w-[6rem] lg:w-[6.3rem] md:w-[5.5rem] right-0" src="/images/Frame 57.svg" alt="">
+
+            </div>
+            <div class="swiper-slide bg-cover	 ">
+              <img class=" absolute bottom-0" src="/images/Frame 600000 (2).svg" alt="">
+              <img class="absolute bottom-0 w-[6rem] lg:w-[6.3rem] md:w-[5.5rem] right-0" src="/images/Frame 57.svg" alt="">
+
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Third section  -->
+
+    <section class="bg-[#181720] pb-20 md:pb-0">
+      <div class="grid max-w-[90%] md:max-w-6xl mx-auto md:grid-cols-3 items-center">
+        <div class=" pt-20 md:pt-0">
+          <h2 class="text-white text-2xl font-normal ">MY SKILLS</h2>
+          <h1 class=" text-white text-5xl leading-light font-myFont pt-3 pb-7">Beautiful and <br> unique digital <br> experiences </h1>
+          <p class="text-white text-lg md:text-normal 
+          ">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna  <br class="md:hidden block">aliqua. <span class="hidden md:block"> Ut   enim ad minim veniam, quis nostrud.</span></p>
+        </div>
+  <div class=" md:mt-28 mt-10 flex flex-col md:items-end md:me-5 ">
+<div class="first-card  w-[100%] md:w-[370px] mb-3 md:mb-5 bg-[#583EBC] rounded-[1.5rem] flex justify-between items-center p-5">
+<div>
+  <img class="w-8 md:w-10 " src="/images/Figma logo.svg" alt="">
+  <h2 class="text-white text-2xl">Figma</h2>
+  <p class= " text-[#CCC5EB] font-light leading-4 text-xs md:text-[0.7rem]		">Lorem ipsum dolor sit<br> amet, consectetur<br class="hidden md:block"> adipiscing elit, </p>
+</div>
+<div>
+  <img class="w-[12rem]  float-end md:float-start" src="/images/Frame 1000002025.png" alt="">
+</div>
+</div>
+
+<div class="third-card hidden md:flex justify-center w-[285] mb-5 bg-[#583EBC] rounded-[1.5rem] p-5">
+  <div>
+  <img class="w-12 " src="/images/Figma logo2.svg" alt="">
+  <h2 class="text-white text-2xl">Illustrator</h2>
+  <p class= " text-[#CCC5EB] font-light leading-5 pb-4 text-xs ">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. </p>
+  <img src="/images/image 555.svg" alt="">
+</div>
+</div>
+
+  </div>
+
+
+  <div class=" flex md:hidden justify-center">
+    <div class="third-card flex justify-center  w-full mb-3 bg-[#583EBC] rounded-[1.5rem] p-5">
+    <div>
+    <img class="w-8 " src="/images/Figma logo2.svg" alt="">
+    <h2 class="text-white text-lg">Illustrator</h2>
+    <p class=" text-[#CCC5EB] font-light leading-2  pb-2" style="
+      font-size: 7px;
+  ">Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. </p>
+    <img src="/images/image 555.svg" alt="">
+  </div>
+  </div>
+   <div class="second-card flex justify-center  mb-3 ml-2 w-full bg-[#583EBC] rounded-[1.5rem] p-5">
+        <div>
+          <img class="w-8 " src="/images/Figma logo 5.svg" alt="">
+          <h2 class="text-white text-lg">Photoshop</h2>
+          <p class=" text-[#CCC5EB] leading-2 font-light pb-2 " style="
+          font-size: 7px;
+      ">Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. </p>
+          <img src="/images/image 53.svg" alt="">
+        </div>
+      </div>
+            </div>
+
+
+  <div class="">
+    <div class="second-card hidden md:flex justify-center mb-5  w-[285px] bg-[#583EBC] rounded-[1.5rem] p-5">
+      <div>
+        <img class="w-12 " src="/images/Figma logo 5.svg" alt="">
+        <h2 class="text-white text-2xl">Photoshop</h2>
+        <p class= " text-[#CCC5EB] font-light leading-4 pb-4 text-xs	">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. </p>
+        <img src="/images/image 53.svg" alt="">
+      </div>
+    </div>
+    <div class="fourth-card w-[100%] md:w-[370px]  bg-[#583EBC] rounded-[1.5rem] flex justify-between items-center p-5">
+      <div>
+        <img class="w-8 md:w-10 " src="/images/Figma logo 4.svg" alt="">
+        <h2 class="text-white text-2xl">Canva</h2>
+        <p class= " text-[#CCC5EB] font-light leading-4 text-xs md:text-[0.7rem]	">Lorem ipsum dolor sit<br> amet, consectetur<br class="hidden md:block"> adipiscing elit, </p>
+      </div>
+      <div>
+        <img class="w-[12rem]  float-end md:float-start" src="/images/image 56.svg" alt="">
+      </div>
+    </div>
+  </div>
+      </div>
+    </section>
+
+    <!-- fourth section  -->
+
+    <section class="bg-[#181720] pb-10 md:py-10">
+      <div class="max-w-[90%] md:max-w-6xl mx-auto">
+        <div>
+          <h2 class="text-white text-center text-4xl md:text-6xl font-myFont pt-10 pb-10 md:pb-16">Featured Works</h2>
+        </div>
+        <div class=" flex items-center justify-center ">
+          <div class="grid-cols-4  ">
+          <div class=""><img src="/images/Frame 1000002013.svg" alt=""></div>
+          <div class=""><img src="/images/Frame 1000002014.svg" alt=""></div>
+          <div class=""><img src="/images/Frame 1000002015.svg" alt=""></div>
+        </div>
+        <div class="grid-cols-8 ">
+          <div class="">
+            <div class="col-span-2"><img src="/images/Frame 1000002012.svg" alt=""></div>
+        </div>
+        <div class="flex items-center">
+          <div class="">
+            <div class=""><img src="/images/Frame 1000002016.svg" alt=""></div>
+            <div class=""><img src="/images/Frame 1000002017.svg" alt=""></div>
+          </div>
+          <div class="">
+            <div class=""><img src="/images/Frame 1000002020.svg" alt=""></div>
+            <div class=""><img src="/images/Frame 1000002019.svg" alt=""></div>
+
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </section>
+<!-- fifth section -->
+
+<section class="bg-[#181720] pt-10 pb-20">
+  <div class="max-w-[90%] md:max-w-6xl mx-auto">
+    <div class="text-center pb-10">
+      <h2 class="text-white text-2xl font-medium ">My Experience</h2>
+         
+            <h1 class=" text-white text-6xl font-myFont py-3">Education</h1>
+    </div>
+    <div class="md:flex justify-center">
+<div class="card_1 md:me-7 bg-[#3E3D4B] w-full md:w-[570px] p-3 md:p-5 pb-5 md:pb-7 mb-5 md:mb-0 rounded-3xl">
+<div>
+  <img  src="/images/image 121.svg" alt="">
+</div>
+<div class="flex items-center pt-3 pb-2"><img class="w-9 md:w-12" src="/images/dooted icon.svg" alt="">
+<h2 class="text-white pl-5 text-2xl  font-myFont">2024</h2>
+</div>
+<p class="text-[#C5C5C9] font-light leading-5 text-xs md:text-lg ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br class="hidden md:block"> do eiusmod tempor incididunt ut labore et dolore magna<br class="hidden md:block"> aliqua. Ut enim ad minim veniam,<br> 
+  quis nostrud. </p>
+</div>
+<div >
+  <div class="card_2 bg-[#3E3D4B] w-full md:w-[570px] p-4 pt-2 pb-5 md:pb-7 rounded-3xl">
+    <div class="flex items-center pt-3 pb-2"><img class="w-9 md:w-12" src="/images/dooted icon.svg" alt="">
+    <h2 class="text-white pl-5 text-2xl  font-myFont">2022</h2>
+    </div>
+    <p class="text-[#C5C5C9] font-light text-xs md:text-lg leading-5 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br class="hidden md:block"> do eiusmod tempor incididunt ut labore et dolore magna<br class="hidden md:block"> aliqua. Ut enim ad minim veniam,<br> 
+      quis nostrud. </p>
+    </div>
+    <div class="flex items-center md:gap-7 gap-3 mt-5 md:mt-7">
+      <div class="card_3 bg-[#3E3D4B] w-full md:w-[270px] p-4 pl-3 md:pl-5 pt-2 pb-3 md:pb-7  rounded-3xl">
+        <div class="flex items-center md:pt-3 pt-1 pb-2"><img class="w-9 md:w-12" src="/images/dooted icon.svg" alt="">
+        <h2 class="text-white pl-5 text-2xl  font-myFont">2020</h2>
+        </div>
+        <p class="text-[#C5C5C9] font-light text-xs md:text-lg leading-5 ">Lorem ipsum dolor sit<br> amet, consectetur<br> adipiscing elit, sed do<br> eiusmod tempor<br> incididunt ut labore et<br> dolore magna aliqua. 
+          </p>
+        </div>
+        <div class="card_4 bg-[#3E3D4B] w-full md:w-[270px] p-4 pl-3 md:pl-5 pt-2 pb-3 md:pb-7 rounded-3xl">
+          <div class="flex items-center md:pt-3 pt-1 pb-2"><img class="w-9 md:w-12" src="/images/dooted icon.svg" alt="">
+          <h2 class="text-white pl-5 text-2xl  font-myFont">2018</h2>
+          </div>
+          <p class="text-[#C5C5C9] font-light text-xs md:text-lg leading-5 ">Lorem ipsum dolor sit<br> amet, consectetur<br> adipiscing elit, sed do<br> eiusmod tempor<br> incididunt ut labore et<br> dolore magna aliqua. 
+          </p>
+          </div>
+    </div>
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- sixth section -->
+
+<section class="bg-[#22212A]  py-14 md:py-20">
+  <div class="max-w-[90%] md:max-w-6xl mx-auto">
+    <div class="pb-14 text-center "> 
+      <div class="flex justify-end mx-auto md:mx-0 w-[100%] md:w-[77%]"><img class="md:w-10 w-7" src="/images/Vector 1.svg" alt=""></div>
+      <h1 class="text-3xl md:text-6xl font-myFont	 text-white pb-5  ">Happy Clients Say</h1>
+          <p class="text-[#A9A9AB] leading-7 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br class="hidden md:block"> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum <br class="hidden md:block">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+  </div>
+  <div class="flex flex-col md:flex-row md:justify-evenly items-center">
+    <div class="bg-[#3E3D4B] p-5 rounded-3xl w-[350px]">
+<div class="flex items-center">
+  <img src="/images/Frame 323.svg" alt="">
+  <div class="pl-3">
+    <h2 class="font-myFont text-lg text-white">Elsa Aptas</h2>
+    <h3 class="text-white font-extralight">CEO, Lirante</h3>
+  </div>
+</div>
+<img class="w-36 py-3" src="/images/Frame 11.svg" alt="">
+<p class="text-[#BDBDC1]">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna<br> aliqua. Ut enim ad minim veniam</p>
+    </div>
+    <div class="bg-[#3E3D4B] my-5 md:my-0 p-5 rounded-3xl w-[350px]">
+<div class="flex items-center">
+  <img src="/images/Frame 323 (1).svg" alt="">
+  <div class="pl-3">
+    <h2 class="font-myFont text-lg text-white">Jonas Jhon</h2>
+    <h3 class="text-white font-extralight">CEO, Lirante</h3>
+  </div>
+</div>
+<img class="w-36 py-3" src="/images/Frame 11 (1).svg" alt="">
+<p class="text-[#BDBDC1]">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna<br> aliqua. Ut enim ad minim veniam</p>
+    </div>
+    <div class="bg-[#3E3D4B] p-5 rounded-3xl w-[350px]">
+<div class="flex items-center">
+  <img src="/images/Frame 323 (2).svg" alt="">
+  <div class="pl-3">
+    <h2 class="font-myFont text-lg text-white">Andrés Ceballos</h2>
+    <h3 class="text-white font-extralight">CEO, Lirante</h3>
+  </div>
+</div>
+<img class="w-36 py-3" src="/images/Frame 11 (2).svg" alt="">
+<p class="text-[#BDBDC1]">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna<br> aliqua. Ut enim ad minim veniam</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- seventh section -->
+
+<section class="bg-[#181720] py-20">
+<div class="max-w-[90%] md:max-w-6xl mx-auto">
+  <div class="md:flex justify-between items-center pb-14">
+    <div>
+      <h2 class="text-white text-3xl font-medium ">STORIES</h2>
+         
+      <h1 class=" text-white text-4xl md:text-6xl font-myFont py-3 pb-4">Blog Update</h1>
+    </div>
+    <div><p class="text-[#E2E2E3] text-lg">Lorem ipsum dolor sit amet, <br class="md:hidden block"> consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore<br class="md:hidden block"> et dolore magna aliqua.<span class="hidden md:block"> Ut enim ad minim veniam, quis nostrud.</span></p></div>
+  </div>
+  <div class="flex  flex-col md:flex-row md:justify-between items-center">
+<div class="relative w-[360px]">
+  <img class="absolute top-0 w-[6.6rem] right-0" src="/images/Frame 427321973.svg" alt="">
+  <img src="/images/Frame 1000002021.svg" alt="">
+  <div class="bg-[#583EBC] rounded-br-3xl rounded-bl-3xl pt-5 p-5 pb-8 w-[360px]">
+    <h2 class="text-white font-myFont pb-2 text-3xl">
+      A great journey
+    </h2>
+    <p class="text-[#F5F3FB] text-lg font-extralight">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor<br> incididunt ut.</p>
+    <h3 class="text-[#F5F3FB] pt-5">7 october 2019</h3>
+  </div>
+</div>
+<div class="relative w-[360px] my-7 md:my-0">
+  <img class="absolute top-0 w-[6.6rem] right-0" src="/images/Frame 427321973.svg" alt="">
+  <img src="/images/Frame 1000002021 (1).svg" alt="">
+  <div class="bg-[#583EBC] rounded-br-3xl rounded-bl-3xl pt-5 p-5 pb-8 w-[360px]">
+    <h2 class="text-white font-myFont pb-2 text-3xl">
+      We travelled much
+    </h2>
+    <p class="text-[#F5F3FB] text-lg font-extralight">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor<br> incididunt ut.</p>
+    <h3 class="text-[#F5F3FB] pt-5">7 october 2019</h3>
+  </div>
+</div>
+<div class="relative w-[360px]">
+  <img class="absolute top-0 w-[6.6rem] right-0" src="/images/Frame 427321973.svg" alt="">
+  <img src="/images/Frame 10000020211.svg" alt="">
+  <div class="bg-[#583EBC] rounded-br-3xl rounded-bl-3xl pt-5 p-5 pb-8 w-[360px]">
+    <h2 class="text-white font-myFont pb-2 text-3xl">
+      We travelled much
+    </h2>
+    <p class="text-[#F5F3FB] text-lg font-extralight">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor<br> incididunt ut.</p>
+    <h3 class="text-[#F5F3FB] pt-5">7 october 2019</h3>
+  </div>
+</div>
+  </div>
+</div>
+</section>
+
+<!-- Footer -->
+
+<section class="bg-[#22212A] pt-20">
+  <div class="max-w-[90%] md:max-w-6xl mx-auto">
+    <div>
+      <div class="md:flex justify-between text-center md:text-left items-center border-b pb-10 border-[#3A3940]">
+        <h2 class="text-white  font-myFont pb-7 md:pb-2 text-4xl md:text-6xl">
+          Lets Connect there
+        </h2>
+        <button class="md:py-2 py-3 px-7 text-2xl font-bold md:font-normal md:text-xl md:ml-3 rounded-lg bg-white md:bg-[#583EBC] text-[#583EBC] md:text-white">Contact  Us</button>
+
+      </div>
+      <div class="py-10 border-b border-[#3A3940] md:flex justify-between">
+        <div class="1">
+          <img src="/images/Frame 55.svg" alt="">
+          <p class="text-[#BDBCBF] py-7 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br class="hidden md:block"> sed do eiusmod tempor incididunt ut labore et dolore <br class="hidden md:block">magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+          <div class="flex w-[160px] justify-between">
+            <img src="/images/facebook footer.svg" alt="">
+            <img src="/images/whatsapp footer.svg" alt="">
+            <img src="/images/instagram footer.svg" alt="">
+            <img src="/images/filled footer.svg" alt="">
+            <img src="/images/youtube footer.svg" alt="">
+          </div>
+        </div>
+        <div class="flex justify-between my-10 md:hidden">
+          <div class="2 leading-8">
+            <h3 class="text-white pb-3 text-xl font-myFont">Navigation</h3>
+            <div> <a href="" class="text-[#BDBCBF]"> Home</a></div>
+            <div> <a href="" class="text-[#BDBCBF]"> About Us</a></div>
+              <div> <a href="" class="text-[#BDBCBF]"> Service</a></div>
+                <div><a href="" class="text-[#BDBCBF]"> Resume</a></div>
+                  <div><a href="" class="text-[#BDBCBF]"> Project</a></div>
+                  </div>
+                  <div class="3 leading-8">
+                    <h3 class="text-white pb-3 text-xl font-myFont">Contact</h3>
+                    <div> <a href="" class="text-[#BDBCBF]"> +1 (234) 567-89-00</a></div>
+                    <div> <a href="" class="text-[#BDBCBF]"> info@gmail.com</a></div>
+                      <div> <a href="" class="text-[#BDBCBF]"> Portfolio.com</a></div>
+                          </div>
+        </div>
+        <div class="2 leading-8 hidden md:block">
+  <h3 class="text-white pb-3 text-xl font-myFont">Navigation</h3>
+  <div> <a href="" class="text-[#BDBCBF]"> Home</a></div>
+  <div> <a href="" class="text-[#BDBCBF]"> About Us</a></div>
+    <div> <a href="" class="text-[#BDBCBF]"> Service</a></div>
+      <div><a href="" class="text-[#BDBCBF]"> Resume</a></div>
+        <div><a href="" class="text-[#BDBCBF]"> Project</a></div>
+        </div>
+        <div class="3 leading-8 hidden md:block">
+          <h3 class="text-white pb-3 text-xl font-myFont">Contact</h3>
+          <div> <a href="" class="text-[#BDBCBF]"> +1 (234) 567-89-00</a></div>
+          <div> <a href="" class="text-[#BDBCBF]"> info@gmail.com</a></div>
+            <div> <a href="" class="text-[#BDBCBF]"> Portfolio.com</a></div>
+                </div>
+                <div class="4 leading-8">
+                  <h3 class="text-white pb-3 text-xl font-myFont">Get the latest information</h3>
+                  <div class=" pt-2 relative">
+                    <a href="#"><img class="absolute right-[3.25rem] md:right-5 top-5" src="/images/Subtract.svg" alt=""></a>
+                    <input class="text-white rounded-xl w-80 bg-[#4B4A52] border-[#4B4A52]" type="text" placeholder="Email Address">
+                  </div>
+                        </div>
+      </div>
+      <div class="md:flex justify-between pt-10 pb-7 items-center">
+        <p class="text-white">Copyright© 2024 | Designed by <a class="text-white underline" href="#">Developios</a>.</p>
+        <div class="text-white">
+          <a href="" class="pe-2">Terms & Conditions</a>|<a href="" class="pl-2">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+  });
+</script>
+</html>
+
+
+
+

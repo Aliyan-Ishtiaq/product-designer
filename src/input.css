@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+  .swiper-slide {
+    height: 502px !important;
+  }
+
+ 
