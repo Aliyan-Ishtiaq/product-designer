@@ -11,6 +11,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
+  .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: white !important;
+}
+
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,12px)) !important;
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,12px)) !important;
+    background: white;
+}
+
   @media (max-width:1050px){
 #click:checked ~ .nav{
   left: 0% ;
@@ -134,7 +145,7 @@
               <p class="text-white leading-8 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br class="hidden md:block"> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
         </div>
         <div class=" swiper mySwiper ">
-          <div class=" swiper-wrapper md:py-5 mb-7 ">
+          <div class=" swiper-wrapper md:pt-5 md:pb-10 mb-7 ">
             <div class=" swiper-slide bg-cover relative"> 
               <img class=" absolute bottom-0" src="images/Frame 600.svg" alt="">
            <a href=""> <img class=" absolute bottom-0 w-[6rem] lg:w-[6.3rem] md:w-[5.5rem]  right-0" src="./images/Frame 57.svg" alt=""></a>
@@ -178,7 +189,7 @@
       <div class="grid max-w-[90%] md:max-w-6xl mx-auto md:grid-cols-3 items-center">
         <div class=" pt-20 md:pt-0">
           <h2 class="text-white text-2xl font-normal ">MY SKILLS</h2>
-          <h1 class=" text-white text-5xl leading-light font-myFont pt-3 pb-7">Beautiful and <br> unique digital <br> experiences </h1>
+          <h1 class=" text-white text-4xl md:text-4xl  hover:underline-offset-1leading-light font-myFont pt-3 pb-7">Beautiful and <br> unique digital <br> experiences </h1>
           <p class="text-white text-lg md:text-normal 
           ">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna  <br class="md:hidden block">aliqua. <span class="hidden md:block"> Ut   enim ad minim veniam, quis nostrud.</span></p>
         </div>
@@ -448,27 +459,28 @@
           <img src="images/Frame 55.svg" alt="">
           <p class="text-[#BDBCBF] py-7 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br class="hidden md:block"> sed do eiusmod tempor incididunt ut labore et dolore <br class="hidden md:block">magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
           <div class="flex w-[160px] justify-between">
-            <img src="images/facebook footer.svg" alt="">
-            <img src="images/whatsapp footer.svg" alt="">
-            <img src="images/instagram footer.svg" alt="">
-            <img src="images/filled footer.svg" alt="">
-            <img src="images/youtube footer.svg" alt="">
+            <a href="#"><img src="images/facebook footer.svg" alt=""></a>
+            <a href="#"><img src="images/whatsapp footer.svg" alt=""></a>
+            <a href="#"><img src="images/instagram footer.svg" alt=""></a>
+            <a href="#"><img src="images/filled footer.svg" alt=""> </a>  
+                  <a href=""> <img src="images/youtube footer.svg" alt=""></a>
           </div>
         </div>
         <div class="flex justify-between my-10 md:hidden">
           <div class="2 leading-8">
             <h3 class="text-white pb-3 text-xl font-myFont">Navigation</h3>
-            <div> <a href="" class="text-[#BDBCBF] hover:underline"> Home</a></div>
-            <div> <a href="" class="text-[#BDBCBF] hover:underline"> About Us</a></div>
-              <div> <a href="" class="text-[#BDBCBF] hover:underline"> Service</a></div>
-                <div><a href="" class="text-[#BDBCBF] hover:underline"> Resume</a></div>
-                  <div><a href="" class="text-[#BDBCBF] hover:underline"> Project</a></div>
+            <div> <a href="" class="text-[#BDBCBF] hover:underline hover:underline-offset-1"> Home</a></div>
+            <div> <a href="" class="text-[#BDBCBF] hover:underline hover:underline-offset-1"> About Us</a></div>
+              <div> <a href="" class="text-[#BDBCBF] hover:underline hover:underline-offset-1"> Service</a></div>
+                <div><a href="" class="text-[#BDBCBF] hover:underline hover:underline-offset-1"> Resume</a></div>
+                  <div><a href="" class="text-[#BDBCBF] hover:underline hover:underline-offset-1"> Project</a></div>
                   </div>
                   <div class="3 leading-8">
-                    <h3 class="text-white pb-3 text-xl font-myFont hover:underline">Contact</h3>
-                    <div> <a href="" class="text-[#BDBCBF] hover:underline"> +1 (234) 567-89-00</a></div>
-                    <div> <a href="" class="text-[#BDBCBF] hover:underline"> info@gmail.com</a></div>
-                      <div> <a href="" class="text-[#BDBCBF] hover:underline"> Portfolio.com</a></div>
+                    <h3 class="text-white pb-3 text-xl font-myFont hover:underline hover:underline-offset-1">Contact</h3>
+                    <div> <a href="" class="text-[#BDBCBF] hover:underline hover:underline-offset-1"> +1 (234) 567-89-00</a></div>
+                    <div> <a href="" class="text-[#BDBCBF] hover:underline hover:underline-offset-1"> info@gmail.com</a></div>
+                      <div> <a href="" class="text-[#BDBCBF]  hover:underline-offset-1
+        "> Portfolio.com</a></div>
                           </div>
         </div>
         <div class="2 leading-8 hidden md:block">
